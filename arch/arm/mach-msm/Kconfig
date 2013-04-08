@@ -1591,11 +1591,19 @@ config MSM_CPU_FREQ_MIN
 
 endif # CPU_FREQ_MSM
 
+<<<<<<< HEAD
 config CMDLINE_OPTIONS
 	bool "Enable cmdline s2w/khz/gov/maxscroff/scheduler command parsing"
 	default n
 	help
 	  This enables the parsing of special cmdline variables.
+=======
+config CPU_VOLTAGE_CONTROL
+	bool "Enable userspace CPU Voltage Control"
+	default y
+	help
+	  Userspace CPU Voltage Control
+>>>>>>> 5c5e349... msm: acpuclock-krait: Userspace voltage control
 
 config MSM_CPU_AVS
 	bool "Enable software controlled Adaptive Voltage Scaling (AVS)"
