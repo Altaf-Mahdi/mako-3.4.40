@@ -1692,6 +1692,13 @@ config HOTPLUG_CPU
 	  Say Y here to experiment with turning CPUs off and on.  CPUs
 	  can be controlled through /sys/devices/system/cpu.
 
+config GENERIC_HOTPLUG
+  	bool "Enable generic hotplug driver"
+  	depends on MSM_RUN_QUEUE_STATS
+  	default y
+	help
+        Enable generic hotplug driver
+
 config LOCAL_TIMERS
 	bool "Use local timer interrupts"
 	depends on SMP
