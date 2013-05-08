@@ -1597,6 +1597,12 @@ config USERSPACE_VOLTAGE_CONTROL
 	help
 	  Userspace Voltage Control
 
+config CMDLINE_OPTIONS
+	bool "Enable cmdline s2w/khz/gov/maxscroff/scheduler command parsing"
+	default n
+	help
+	  This enables the parsing of special cmdline variables.
+
 config MSM_CPU_AVS
 	bool "Enable software controlled Adaptive Voltage Scaling (AVS)"
 	depends on (ARCH_MSM_SCORPION && QSD_SVS)
