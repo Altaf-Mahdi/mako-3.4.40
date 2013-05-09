@@ -53,7 +53,7 @@ static struct led_trigger thermal_led_trigger = {
 static void check_temp(struct work_struct *work)
 {
 	const short high_temp = 62;
-	const short low_temp = 47;
+	const short low_temp = 50;
 	const short max_br = 255;
 	struct tsens_device tsens_dev;
 	unsigned long temp = 0;
