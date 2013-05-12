@@ -827,7 +827,7 @@ static struct cpufreq_frequency_table freq_table[NR_CPUS][35];
 
 #ifdef CONFIG_MSM_CPU_VOLTAGE_CONTROL
 #define CPU_VDD_MAX		1300
-#define CPU_VDD_MIN		800
+#define CPU_VDD_MIN		650
 
 int get_freq_count(void)
 {
